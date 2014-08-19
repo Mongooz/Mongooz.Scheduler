@@ -3,6 +3,7 @@ Mongooz.Scheduler
 
 Customisable Retry Scheduler with a fluent interface.
 
+```csharp
 IExecute executor = new RetryExecutor().
   WithDelay(100).             //Initial delay of 100ms before retry
   WithExponentialBackoff(2).  //Exponential increase delay
@@ -11,3 +12,4 @@ IExecute executor = new RetryExecutor().
   WithMaximumRetries(2);      //Maximum number of retries of 2
   
 executor.Execute(dangerousOperation);
+```
