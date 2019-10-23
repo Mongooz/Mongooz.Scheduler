@@ -1,7 +1,7 @@
 Mongooz.Scheduler
 =================
 
-Customisable Retry Scheduler with a fluent interface.
+Customisable blocking, non-asynchronous retry scheduler with a fluent interface.
 
 ```csharp
 IExecute executor = new RetryExecutor().
